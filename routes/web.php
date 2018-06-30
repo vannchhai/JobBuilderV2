@@ -13,6 +13,8 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('login', 'Auth\Login@index');
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/checkRole', 'HomeController@checkRole');
@@ -68,6 +70,8 @@ Route::post('/UpdateJobs/', 'Employer\ManageApplicationController@UpdateJobs');
 Route::get('/AddResume/{id}', 'Candidate\JobAlertController@ShowResume');
 Route::get('/RemoveMessage/{id}/{mId}', 'Candidate\JobAlertController@RemoveMessage');
 
+
+Route::get('dashobard', 'Admin\DashobardController@index');
 
 
 

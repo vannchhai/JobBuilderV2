@@ -59,17 +59,23 @@
         @endif
 	</div>
 	<button class="btn btn-common log-btn" type="submit">Login</button>
+	<div class="text-center">
+		<a href="{{ url('/login/facebook') }}" class="btn btn-facebook btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
+		<a href="{{ url('/login/linkedin') }}" class="btn btn-linkedin btn-info"><i class="fa fa-linkedin"></i> Linkedin</a>
+	</div>
 	<div class="checkbox-item">
 		<div class="checkbox">
 			<label for="rememberme" class="rememberme">
 			<input name="rememberme" id="rememberme" value="forever" type="checkbox" {{ old('remember') ? 'checked' : '' }}> Remember Me</label>
 		</div>
+		
 		<p class="cd-form-bottom-message">
 			<a class="btn btn-link" href="{{ route('password.request') }}">
                 {{ __('Forgot Your Password?') }}
             </a>
 		</p>
 	</div>
+	
 </form>
 </div>
 </div>
