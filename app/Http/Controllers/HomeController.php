@@ -39,7 +39,7 @@ class HomeController extends FrontController
         ->inRandomOrder()->simplePaginate(5);
 
 
-        return view('home', $data);
+        return view('welcome', $data);
 
 
     }
