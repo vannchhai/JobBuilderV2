@@ -29,17 +29,34 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Name</th>
-                                            <th>Date</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>RegisterDate</th>
                                             <th>Type</th>
-                                            <th>Detail</th>
-                                            <th>Image</th>
-                                            <th>Action</th>
+                                            <th>Admin</th>
                                         </tr>
                                    </thead>
                                    <tbody>
-                                       
+                                        <?php $i = 1; ?>
+                                       @foreach($usr as $item)
+                                          <tr>
+                                            <th>{{ $i++ }}</th>
+                                            <th class="text-nowrap">{{ $item->userName }}</th>
+                                            <th class="text-nowrap">{{ $item->email }}</th>
+                                            <th class="text-nowrap">{{ $item->phone }}</th>
+                                            <th class="text-nowrap">{{ $item->created_at }}</th>
+                                            <th class="text-nowrap">{{ $item->name }}</th>
+                                            <th class="text-nowrap">{{ $item->contact_phone }}</th>
+                                            <th class="text-nowrap">
+                                                <a href="#" class="btn btn-warning"><i class="fa fa-eye"></i></a>
+                                                <a href="#" class="btn btn-info"><i class="fa fa-pencil"></i></a>
+                                                <a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                            </th>
+                                        </tr>
+                                       @endforeach
                                    </tbody>
                                 </table>
+                                {{ $usr->links() }}
                             </div>
                         </section>
                     </div>

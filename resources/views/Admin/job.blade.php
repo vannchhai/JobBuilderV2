@@ -39,7 +39,7 @@
                                    </thead>
                                    <tbody>
                                         <?php $i = 1; ?>
-                                       @foreach($ad as $item)
+                                        @foreach($ad as $item)
                                          <tr>
                                             <th>{{ $i++ }}</th>
                                             <th class="text-nowrap">{{ $item->company_name }}</th>

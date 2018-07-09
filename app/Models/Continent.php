@@ -5,7 +5,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Continent extends BaseModel
+class Continent extends Model
 {
     /**
      * The table associated with the model.

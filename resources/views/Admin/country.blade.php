@@ -11,7 +11,7 @@
                         <div class="page-title">
 
                             <div class="pull-left">
-                                <h1 class="title">Country Management</h1>
+                                <h1 class="title">Cities Management</h1>
                             </div>
 
 
@@ -29,7 +29,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Name</th>
-                                            <th>Date</th>
+                                            <th>TimeZone</th>
                                             <th>Type</th>
                                             <th>Detail</th>
                                             <th>Image</th>

@@ -3,10 +3,9 @@
 
 namespace App\Models;
 
-use App\Scopes\ActiveScope;
 use Illuminate\Database\Eloquent\Model;
 
-class UserType extends BaseModel
+class UserType extends Model
 {
     /**
      * The table associated with the model.
@@ -56,28 +55,7 @@ class UserType extends BaseModel
      * @var array
      */
     // protected $dates = [];
-    
-    /*
-    |--------------------------------------------------------------------------
-    | FUNCTIONS
-    |--------------------------------------------------------------------------
-    */
-    protected static function boot()
-    {
-        parent::boot();
-        
-        static::addGlobalScope(new ActiveScope());
-    }
-    
-    /*
-    |--------------------------------------------------------------------------
-    | RELATIONS
-    |--------------------------------------------------------------------------
-    */
-    public function users()
-    {
-        return $this->hasMany('App\Models\User');
-    }
+   
     
     /*
     |--------------------------------------------------------------------------
