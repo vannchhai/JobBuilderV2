@@ -52,7 +52,7 @@ class HomeController extends FrontController
             
             if ($auth->user_type_id == 1 && $auth->is_admin == true) {
                 //admin
-                return Redirect::to('/dashobard');
+                return Redirect::to('/dashboard');
                 
             }else if($auth->user_type_id == 2){
                 //employer
