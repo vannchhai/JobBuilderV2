@@ -7710,3 +7710,7 @@ border-left: 3px solid transparent;
     background-color: rgba(153, 114, 181, .7);
 }
 */
+.box{
+    background: #fff !important;
+    padding: 10px !important;
+}

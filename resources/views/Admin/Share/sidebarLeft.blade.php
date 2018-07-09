@@ -48,10 +48,10 @@
                             </a>
                             <ul class="sub-menu" >
                                 <li>
-                                    <a class="" href="#" >User Type</a>
+                                    <a class="" href="{{ url('/userTypeMng') }}" >User Type</a>
                                 </li>
                                 <li>
-                                    <a class="" href="#">User Register</a>
+                                    <a class="" href="{{ url('/userMng') }}">User Register</a>
                                 </li>
                             </ul>
                         </li>
@@ -63,13 +63,13 @@
                             </a>
                             <ul class="sub-menu" >
                                 <li>
-                                    <a class="" href="#" >Jobs Type</a>
+                                    <a class="" href="{{ url('/jobType') }}" >Jobs Type</a>
                                 </li>
                                 <li>
-                                    <a class="" href="#" >Jobs Category</a>
+                                    <a class="" href="{{ url('/jobCategory') }}" >Jobs Category</a>
                                 </li>
                                 <li>
-                                    <a class="" href="#" >Jobs</a>
+                                    <a class="" href="{{ url('/job') }}" >Jobs</a>
                                 </li>
                             </ul>
                         </li>
@@ -81,10 +81,10 @@
                             </a>
                             <ul class="sub-menu" >
                                 <li>
-                                    <a class="" href="#" >Zone</a>
+                                    <a class="" href="{{ url('/zone') }}" >Zone</a>
                                 </li>
                                 <li>
-                                    <a class="" href="#" >Country</a>
+                                    <a class="" href="{{ url('/country') }}" >Country</a>
                                 </li>
                             </ul>
                         </li>
@@ -97,10 +97,10 @@
                             </a>
                             <ul class="sub-menu" >
                                 <li>
-                                    <a class="" href="charts-morris.html" >Company Register</a>
+                                    <a class="" href="{{ url('/company') }}" >Company Register</a>
                                 </li>
                                 <li>
-                                    <a class="" href="charts-chartjs.html" >Resume</a>
+                                    <a class="" href="{{ url('/company') }}" >Resume</a>
                                 </li>
                             </ul>
                         </li>
@@ -112,42 +112,42 @@
                             </a>
                             <ul class="sub-menu" >
                                 <li>
-                                    <a class="" href="#" >Privacy</a>
+                                    <a class="" href="{{ url('/privacy') }}" >Privacy</a>
                                 </li>
                                 <li>
-                                    <a class="" href="#" >Term of Use</a>
+                                    <a class="" href="{{ url('/termOfuse') }}" >Term of Use</a>
                                 </li>
                                 <li>
-                                    <a class="" href="#" >FAQ</a>
+                                    <a class="" href="{{ url('/faq') }}" >FAQ</a>
                                 </li>
                                 <li>
-                                    <a class="" href="#" >Contact Us</a>
+                                    <a class="" href="{{ url('/contact') }}" >Contact Us</a>
                                 </li>
                                 <li>
-                                    <a class="" href="#" >About</a>
+                                    <a class="" href="{{ url('/about') }}" >About</a>
                                 </li>
                             </ul>
                         </li>
                         <li class=""> 
-                            <a href="#">
+                            <a href="{{ url('/advertise') }}">
                                 <i class="fa fa-lock"></i>
                                 <span class="title">Advertise</span>
                             </a>
                         </li>
                         <li class=""> 
-                            <a href="#">
+                            <a href="{{ url('/setting') }}">
                                 <i class="fa fa-table"></i>
                                 <span class="title">Setting</span>
                             </a>
                         </li>
                         <li class=""> 
-                            <a href="#">
+                            <a href="{{ url('/account') }}">
                                 <i class="fa fa-envelope"></i>
                                 <span class="title">Account</span>
                             </a>
                         </li>
                         <li class=""> 
-                            <a href="javascript:;">
+                            <a href="{{ url('/help') }}">
                                 <i class="fa fa-map-marker"></i>
                                 <span class="title">Help</span>
                             </a>
