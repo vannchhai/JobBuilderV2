@@ -72,30 +72,30 @@ Route::get('/RemoveMessage/{id}/{mId}', 'Candidate\JobAlertController@RemoveMess
 
 
 // side bar lift
-Route::get('dashobard', 'Admin\DashobardController@index');
-Route::get('job', 'Admin\JobMngController@index');
-Route::get('jobCategory', 'Admin\JobCategoryMngController@index');
-Route::get('jobType', 'Admin\JobTypeMngController@index');
+Route::get('/dashboard', 'Admin\DashboardController@index');
+Route::get('/job', 'Admin\JobMngController@index');
+Route::get('/jobCategory', 'Admin\JobCategoryMngController@index');
+Route::get('/jobType', 'Admin\JobTypeMngController@index');
 
-Route::get('userMng', 'Admin\UserMngController@index');
-Route::get('userTypeMng', 'Admin\UserTypeMngController@index');
+Route::get('/userMng', 'Admin\UserMngController@index');
+Route::get('/userTypeMng', 'Admin\UserTypeMngController@index');
 
-Route::get('zone', 'Admin\ZoneMngController@index');
-Route::get('country', 'Admin\CountryMngController@index');
+Route::get('/zone', 'Admin\ZoneMngController@index');
+Route::get('/country', 'Admin\CountryMngController@index');
 
-Route::get('setting', 'Admin\PageMngController@setting');
-Route::get('privacy', 'Admin\PageMngController@privacy');
-Route::get('termOfuse', 'Admin\PageMngController@termOfuse');
-Route::get('faq', 'Admin\PageMngController@faq');
-Route::get('contact', 'Admin\PageMngController@contact');
-Route::get('about', 'Admin\PageMngController@about');
-Route::get('help', 'Admin\PageMngController@help');
+Route::get('/setting', 'Admin\PageMngController@setting');
+Route::get('/privacy', 'Admin\PageMngController@privacy');
+Route::get('/termOfuse', 'Admin\PageMngController@termOfuse');
+Route::get('/faq', 'Admin\PageMngController@faq');
+Route::get('/contact', 'Admin\PageMngController@contact');
+Route::get('/about', 'Admin\PageMngController@about');
+Route::get('/help', 'Admin\PageMngController@help');
 
-Route::get('advertise', 'Admin\AdvertiseMngController@index');
+Route::get('/advertise', 'Admin\AdvertiseMngController@index');
 
-Route::get('account', 'Admin\AccountMngController@index');
+Route::get('/account', 'Admin\AccountMngController@index');
 
-Route::get('company', 'Admin\CompanyMngController@index');
+Route::get('/company', 'Admin\CompanyMngController@index');
 
 
 
